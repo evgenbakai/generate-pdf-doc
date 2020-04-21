@@ -117,7 +117,8 @@
       </table>
     </div>
   </section>
-</div> -->
+</div>
+<button (click)="downloadPdf()">Get pdf</button> -->
 
 <div class="page">
   <kendo-pdf-export #pdf [scale]='0.75' paperSize="A4" margin="0cm">
@@ -240,6 +241,6 @@
   </kendo-pdf-export>
 </div>
 
-<button (click)="pdf.saveAs('document.pdf')">Get pdf</button>
-<!-- <button (click)="downloadPdf()">Get pdf</button> -->
-<router-outlet></router-outlet>
+<div class="flex-container btn">
+  <button (click)="pdf.saveAs('document.pdf')">Get pdf</button>
+</div>

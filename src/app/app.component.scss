@@ -1,10 +1,30 @@
+section {
+  border: 1px solid red;
+  height: 297mm;
+}
+
+.page {
+  font-size: 15px;
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  width: 210mm;
+  min-height: 297mm;
+}
+
 #customers td, #customers th {
   padding: 2px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:nth-child(even){
+  background-color: #f2f2f2;
+}
 
-#customers tr:hover {background-color: #ddd;}
+#customers tr:hover {
+  background-color: #ddd;
+}
 
 #customers th {
   text-align: left;
@@ -15,4 +35,8 @@
 .flex-container {
   display: flex;
   justify-content: space-between;
+}
+
+.btn {
+  justify-content: center;
 }
